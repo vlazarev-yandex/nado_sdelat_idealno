@@ -8,15 +8,32 @@
   letter-spacing: 4.06px;
   text-transform: uppercase;
 
+  pointer-events: none;
+
   margin: 0;
+
+  height: fit-content;
+
 }
 
 .title::after {
   content: "*";
   position: absolute;
+  pointer-events: all;
 }
 
-.title:hover::after {
+/* .title:hover + .overlay {
+  background-color: #000;
+  opacity: 30%;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+.title:hover::before {
   content: "На самом деле нет. \A Важнее &mdash; научиться ошибаться.";
   white-space: pre-wrap;
 
@@ -30,13 +47,41 @@
   border-radius: 20px;
   border: 2px solid #000;
 
-  /* width: 742px;
-    height: 142px;
-    flex-shrink: 0; */
+  position: absolute;
 
   text-align: left;
   padding: 36px 44px;
 
-  position: absolute;
-  right: 0;
+  box-shadow: 0 14px #000, 0 0 0 100vw rgba(255, 255, 255, 0.30);
+
+  height: fit-content;
+  min-width: max-content;
+
+}
+
+@media screen and (min-width: 1821px) {
+
+  .title {
+    position: relative;
+  }
+
+  .title:hover::before {
+    left: 405px;
+    bottom: 144px;
+  }
+
+}
+
+
+@media screen and (max-width: 1821px) {
+
+  .main {
+    position: relative;
+  }
+
+  .title:hover::before {
+    right: 22px;
+    top: 182px;
+  }
+
 }
