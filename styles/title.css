@@ -13,7 +13,6 @@
   margin: 0;
 
   height: fit-content;
-
 }
 
 .title::after {
@@ -52,15 +51,13 @@
   text-align: left;
   padding: 36px 44px;
 
-  box-shadow: 0 14px #000, 0 0 0 100vw rgba(255, 255, 255, 0.30);
+  box-shadow: 0 14px #000, 0 0 0 100vw rgba(255, 255, 255, 0.3);
 
   height: fit-content;
   min-width: max-content;
-
 }
 
 @media screen and (min-width: 1821px) {
-
   .title {
     position: relative;
   }
@@ -69,12 +66,9 @@
     left: 405px;
     bottom: 144px;
   }
-
 }
 
-
 @media screen and (max-width: 1821px) {
-
   .main {
     position: relative;
   }
@@ -83,5 +77,4 @@
     right: 22px;
     top: 182px;
   }
-
 }
