@@ -1,0 +1,56 @@
+.title {
+  width: 800px;
+
+  color: #000;
+  text-align: center;
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 4.06px;
+  text-transform: uppercase;
+
+  pointer-events: all;
+
+  margin: 0;
+
+  height: fit-content;
+}
+
+.title::after {
+  content: "*";
+  position: relative;
+}
+
+.title:hover::before {
+  content: "На самом деле нет. \AВажнее &mdash; научиться ошибаться.";
+  white-space: pre;
+
+  text-transform: none;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 100% */
+
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #000;
+
+  position: absolute;
+
+  text-align: left;
+  padding: 36px 44px;
+
+  box-shadow: 0 14px #000;
+
+  height: fit-content;
+  min-width: max-content;
+  max-width: 746px;
+
+  right: 22px;
+  top: 182px;
+}
+
+.extra-space {
+  margin-left: 20px;
+}
