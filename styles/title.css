@@ -22,7 +22,7 @@
 
 }
 
-.title:hover::before {
+.title:hover::after {
   content: "На самом деле нет. \A Важнее &mdash; научиться ошибаться.";
   white-space: pre-wrap;
 
@@ -53,7 +53,7 @@
     position: relative;
   }
 
-  .title:hover::before {
+  .title:hover::after {
     left: 405px;
     bottom: 144px;
   }
@@ -64,7 +64,7 @@
     position: relative;
   }
 
-  .title:hover::before {
+  .title:hover::after {
     right: 22px;
     top: 182px;
   }
