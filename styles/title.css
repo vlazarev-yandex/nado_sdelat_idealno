@@ -1,5 +1,8 @@
 .title {
-  color: #000;
+
+  width: 800px;
+
+  color: #000; 
   text-align: center;
   font-size: 116px;
   font-style: normal;
@@ -8,7 +11,7 @@
   letter-spacing: 4.06px;
   text-transform: uppercase;
 
-  pointer-events: none;
+  pointer-events: all;
 
   margin: 0;
 
@@ -17,8 +20,7 @@
 
 .title::after {
   content: "*";
-  position: absolute;
-  pointer-events: all;
+  position: relative;
 }
 
 .title:hover::before {
@@ -44,26 +46,12 @@
 
   height: fit-content;
   min-width: max-content;
+  max-width: 746px;
+
+  right: 22px;
+  top: 182px;
 }
 
-@media screen and (min-width: 1821px) {
-  .title {
-    position: relative;
-  }
-
-  .title:hover::before {
-    left: 405px;
-    bottom: 144px;
-  }
-}
-
-@media screen and (max-width: 1821px) {
-  body {
-    position: relative;
-  }
-
-  .title:hover::before {
-    right: 22px;
-    top: 182px;
-  }
+.extra-space {
+  margin-left: 20px;
 }
