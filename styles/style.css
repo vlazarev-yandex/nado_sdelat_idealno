@@ -14,6 +14,8 @@ body {
 
   display: flex;
   justify-content: center;
+
+  position: relative;
 }
 
 body::after {
@@ -25,7 +27,6 @@ body::after {
   z-index: -1;
 }
 
-
 *,
 *::before,
 *::after {
@@ -34,5 +35,5 @@ body::after {
 }
 
 .border {
-    border: 5px red solid;
-  }
+  border: 5px red solid;
+}

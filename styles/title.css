@@ -19,19 +19,17 @@
   content: "*";
   position: absolute;
   pointer-events: all;
-
 }
 
 .title:hover::before {
-  content: "На самом деле нет. \A Важнее &mdash; научиться ошибаться.";
-  white-space: pre-wrap;
+  content: "На самом деле нет. \AВажнее &mdash; научиться ошибаться.";
+  white-space: pre;
 
   text-transform: none;
   font-size: 35px;
   font-style: normal;
   font-weight: 400;
   line-height: 35px; /* 100% */
-
 
   background: #fff;
   border-radius: 20px;
@@ -68,4 +66,4 @@
     right: 22px;
     top: 182px;
   }
-} 
+}
