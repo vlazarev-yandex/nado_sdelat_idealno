@@ -1,16 +1,31 @@
+html {
+  height: 100%;
+}
+
 body {
+  min-width: 800px;
+  height: 100%;
   margin: 0;
   box-sizing: border-box;
 
   font-family: Raleway, sans-serif;
 
   padding-top: 60px;
-  height: 100vh;
 
-  /* position: relative; */
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  z-index: -1;
+}
+
 
 *,
 *::before,
@@ -20,5 +35,5 @@ body {
 }
 
 .border {
-  border: 5px red solid;
-}
+    border: 5px red solid;
+  }
